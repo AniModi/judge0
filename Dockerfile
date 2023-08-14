@@ -12,6 +12,7 @@ LABEL maintainer=$JUDGE0_MAINTAINER
 ENV PATH "/usr/local/ruby-2.7.0/bin:/opt/.gem/bin:$PATH"
 ENV GEM_HOME "/opt/.gem/"
 
+RUN echo "hello"
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \
       cron \
